@@ -1,10 +1,16 @@
 {
   "private": true,
   "workspaces": [
-    "apps/*",
-    "packages/*"
+    "packages/tsconfig",
+    "apps/api"
   ],
   "scripts": {
-    "dev": "echo hi"
+    "check-format": "prettier --check .",
+    "dev": "echo hi",
+    "format": "npx prettier . --write",
+    "test": "npm run test --workspaces --if-present"
+  },
+  "devDependencies": {
+    "prettier": "3.5.3"
   }
 }

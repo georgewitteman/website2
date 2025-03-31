@@ -1,0 +1,14 @@
+{
+  "name": "api",
+  "private": "true",
+  "scripts": {
+    "test": "tsx --test"
+  },
+  "dependencies": {
+    "@types/node": "^22.13.14",
+    "@website/tsconfig": "*"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.3"
+  }
+}
