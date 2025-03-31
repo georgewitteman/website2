@@ -5,8 +5,7 @@
     "apps/api"
   ],
   "scripts": {
-    "check-format": "prettier --check .",
-    "dev": "echo hi",
+    "lint": "npm run lint --workspaces --if-present && prettier --check .",
     "format": "npx prettier . --write",
     "test": "npm run test --workspaces --if-present"
   },
