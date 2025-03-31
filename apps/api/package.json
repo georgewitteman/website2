@@ -1,16 +1,17 @@
 {
   "name": "api",
   "private": "true",
+  "type": "module",
   "scripts": {
     "lint": "tsc --noEmit",
-    "test": "tsx --test"
+    "start": "node --experimental-transform-types ./src/index.ts",
+    "test": "node --experimental-transform-types --test"
   },
   "dependencies": {
     "@types/node": "^22.13.14",
     "@website/tsconfig": "*"
   },
   "devDependencies": {
-    "tsx": "^4.19.3",
     "typescript": "^5.8.2"
   }
 }

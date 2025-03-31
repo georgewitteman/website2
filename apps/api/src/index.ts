@@ -5,3 +5,5 @@ export const dummy = () => {
 export const dummy2 = () => {
   return 123;
 };
+
+console.log(dummy());
