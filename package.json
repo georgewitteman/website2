@@ -3,14 +3,13 @@
   "private": true,
   "workspaces": [
     "packages/tsconfig",
+    "packages/eslint-config",
     "apps/api"
   ],
   "scripts": {
     "lint": "npm run lint --workspaces --if-present && prettier --check .",
+    "lint:fix": "npm run lint:fix --workspaces --if-present && npm run format",
     "format": "npx prettier . --write",
     "test": "npm run test --workspaces --if-present"
-  },
-  "devDependencies": {
-    "prettier": "3.5.3"
   }
 }

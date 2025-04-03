@@ -1,0 +1,26 @@
+{
+  "name": "@website/eslint-config",
+  "type": "module",
+  "version": "1.0.0",
+  "files": [
+    "./base.mjs"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.23.0",
+    "@eslint/json": "^0.11.0",
+    "@website/tsconfig": "*",
+    "eslint": "^9.23.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-perfectionist": "^4.10.1",
+    "globals": "^16.0.0",
+    "prettier": "3.5.3",
+    "typescript-eslint": "^8.28.0"
+  },
+  "peerDependencies": {
+    "eslint": "^9.23.0"
+  }
+}

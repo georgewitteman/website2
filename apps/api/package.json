@@ -2,16 +2,19 @@
   "name": "api",
   "private": "true",
   "type": "module",
+  "version": "1.0.0",
   "scripts": {
-    "lint": "tsc --noEmit",
+    "lint": "tsc --noEmit && eslint .",
+    "lint:fix": "tsc --noEmit && eslint --fix .",
     "start": "node --experimental-transform-types ./src/index.ts",
     "test": "node --experimental-transform-types --test"
   },
-  "dependencies": {
-    "@types/node": "^22.13.14",
-    "@website/tsconfig": "*"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "@types/node": "^22.13.14",
+    "@website/eslint-config": "*",
+    "@website/tsconfig": "*",
+    "eslint": "^9.23.0",
     "typescript": "^5.8.2"
   }
 }

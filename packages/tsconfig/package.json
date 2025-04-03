@@ -1,4 +1,14 @@
 {
   "name": "@website/tsconfig",
-  "private": "true"
+  "type": "module",
+  "private": "true",
+  "version": "1.0.0",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
+  },
+  "devDependencies": {
+    "@website/eslint-config": "*",
+    "eslint": "^9.23.0"
+  }
 }

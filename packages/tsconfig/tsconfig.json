@@ -1,5 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
+  "": true,
   "compilerOptions": {
     "erasableSyntaxOnly": true,
     "rewriteRelativeImportExtensions": true,
@@ -19,6 +20,5 @@
     "preserveWatchOutput": true,
     "skipLibCheck": true,
     "strict": true
-  },
-  "exclude": ["node_modules"]
+  }
 }
